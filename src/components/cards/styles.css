@@ -1,0 +1,65 @@
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: black;
+}
+.cards-content{
+    width: 90%;
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Flash Rogers', sans-serif;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+
+.banner-1{
+    background-image: url('https://i.redd.it/0t1t62gqy3m61.jpg');
+}
+.banner-2 {
+    background-image: url('https://i.pinimg.com/736x/41/94/57/4194576ffcbdb20ca6add1b166666073.jpg')
+}
+
+.banner-3 {
+    background-image: url('https://i.pinimg.com/originals/68/53/6a/68536a401250dfe7cbef896af2df051f.jpg')
+}
+
+.banner-4 {
+    background-image: url('https://pbs.twimg.com/media/EgDo__2X0AElGVq.png')
+}
+
+.banner-5 {
+    background-image: url('https://i.pinimg.com/736x/b4/95/c6/b495c67be770a8815269fcf2d85679ca.jpg');
+}
+
+.banner-6 {
+    background-image: url('https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/05/31/GeneralZod.jpeg')
+}
+
+@media(max-width: 768px){
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        height: 100%;
+    }
+}

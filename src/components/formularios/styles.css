@@ -1,0 +1,100 @@
+#input-date{
+    color: aliceblue;
+    font-size: 19px;
+    font-family: 'Flash Rogers', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 30px 00px;
+}
+
+#inputs{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.left{
+    width: 40%;
+}
+
+.blocos{
+    color: black;
+    font-size: 12px;
+    font-family: 'Flash Rogers', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+
+}
+
+.right{
+    width: 40%;
+}
+#mensagem{
+    color: black;
+    font-size: 12px;
+    font-family: 'Flash Rogers', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    justify-content: center;
+    border-radius: 5px;
+    width: 80%;
+    height: 190px;
+}
+
+
+.button{
+    width: 90%;
+    height: 60px;
+    margin: 5%;
+    background-color: rgba(255, 0, 0, 0.656);
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+ 
+.button:hover{
+    background-color: aliceblue;
+    color: black;   
+}
+
+@media(max-width: 768px){
+    
+    .button{
+        margin-top: 30px;
+    }
+    #input-date{
+        width: 90%;
+        align-items: baseline;
+        margin: 20px 5%;
+        padding: 0px;
+    }
+    #inputs{
+        display: block;
+        height: 100%;
+    }
+
+    
+    .left{
+    width: 100%;
+    }
+    
+    .right{
+    width: 100%;
+    }
+}
